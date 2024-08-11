@@ -66,23 +66,23 @@ const Map = () => {
                                 <div>
                                     <input
                                         type="text"
-                                        placeholder="Name"
+                                        placeholder="Title"
                                         value={marker.name}
                                         onChange={(e) => handleInputChange(index, 'name', e.target.value)}
                                     />
                                     <textarea
-                                        placeholder="Description"
+                                        placeholder="Location"
                                         value={marker.description}
                                         onChange={(e) => handleInputChange(index, 'description', e.target.value)}
                                     />
                                     <input
-                                        type="number"
+                                        type="Rating"
                                         placeholder="Stars"
                                         value={marker.stars}
                                         onChange={(e) => handleInputChange(index, 'stars', e.target.value)}
                                     />
                                     <textarea
-                                        placeholder="Comments"
+                                        placeholder="Details"
                                         value={marker.comments.join(', ')}
                                         onChange={(e) => handleInputChange(index, 'comments', e.target.value.split(', '))}
                                     />
