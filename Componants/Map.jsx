@@ -3,6 +3,8 @@ import 'leaflet/dist/leaflet.css';
 import "../src/App.css";
 import { MapContainer, Marker, Popup, TileLayer, useMapEvents } from 'react-leaflet';
 import { getMarkers, saveMarkers } from '../src/constants';
+import EditMarkers from './Btn';
+
 // import Navbar from './Navbar';
 
 const Map = () => {
@@ -54,6 +56,7 @@ const Map = () => {
     return (
 
             <MapContainer center={[24.70706502979077, 46.67049745678526]} zoom={6} scrollWheelZoom={true} zoomControl={false}>
+                <EditMarkers />
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

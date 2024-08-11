@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { getMarkers, saveMarkers } from '../src/constants';
+import "./App.css"
 
 const EditMarkers = () => {
     const [markerList, setMarkerList] = useState(getMarkers());
@@ -18,9 +19,9 @@ const EditMarkers = () => {
     };
 
     return (
-        <div>
+        <div className='edit-cont'>
             {markerList.map((marker, index) => (
-                <div key={index}>
+                <div key={index} className='marker-card'>
                     <h3>Marker {index + 1}</h3>
                     <input
                         type="text"
